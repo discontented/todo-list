@@ -4,6 +4,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
+<body>
 <div id='newTask'>
 <input id='title' placeHolder="New Task"><button id='add'>+</button>
 </div>
@@ -25,3 +26,35 @@
   </ul>
   </section>
 </div>
+
+<script>
+  $('#todo').sortable({
+  axis: 'y',
+  cancel: "ul"
+})
+
+$(function(){
+	$('section > h2').siblings().hide();
+})
+
+$('section > h2').click(function(){
+	$(this).siblings().slideToggle();
+})
+
+$(document).on('click', '#add', function(){
+	var title = $('#title').val();
+  $('#title').val('');
+  $('#todo').append('<section ><h2>'+title+'</h2></section>');
+ })
+
+//in progress - add sub tasks to each todo
+// $('#todo').find('ul').append('<button class="list-add">+</button>');
+
+
+// $(document).on('click', '.list-add', function(){	
+//   $(this).parent('div').find('ul').append('<li contentEditable></li>')
+//   $(this).parent('div').find('ul').find('li').last().focus();
+// })
+</script>
+
+</body>

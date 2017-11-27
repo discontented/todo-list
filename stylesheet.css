@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+	background-color: #FDFDFD;
+	font-family: 'Roboto', sans-serif;
+}
+#newTask {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+#add {
+  display:inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /*padding: 1em 2em 1em 2em;*/
+ width: 15%;
+  color: #fff;
+  /*background-color: #ED3F26;*/
+  background-color: #E2574C;
+  font-size: 18px;
+  text-align: center;
+  font-style: bold;
+  border-radius: 5px;
+  border: 1px solid #384047;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin: 0px auto;
+
+}
+
+button {
+	transition: all 500ms ease;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+
+#title{
+	display: inline-block;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 2.5%
+  ;
+  outline: 0;
+  padding: 15px;
+  width: 60%;
+  background-color: #E1F7FD;
+  /*color: #8a97a0;*/
+  color: #000;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 10px;
+}
+
+section {
+	margin: 2.5%;
+	border: 10px #eee solid;
+	/*box-shadow: 10px 10px 10px rgba(0,0,0,.2);*/
+	/*box-shadow: 0px 10px 20px rgba(0,0,0,.2);*/
+	box-shadow: 0px 20px 15px -12px rgba(0,0,0,.2);
+	background-color: #fff;
+}
+
+section>h2 {
+	color: #EEEEEE;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 1em 0;
+	text-align: center;
+	font-family: sans-serif;
+	/*background-color: #00AADD; old color*/
+	background-color: #009ECE;
+	cursor: pointer;
+}
+
+section ul{
+	list-style: none; 
+	padding: 1em;
+}
+
+ul li {
+	padding: 1em .5em;
+}
+
+section li:nth-child(even) {
+	background-color: #EEE;
