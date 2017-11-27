@@ -87,4 +87,5 @@ ul li {
 }
 
 section li:nth-child(even) {
-	background-color: #EEE;
+    background-color: #EEE;
+}
